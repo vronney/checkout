@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Awesome Font -->
+    <script src="https://kit.fontawesome.com/0a75eded7e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Main Section -->
+    <section class="mainSection">
+        <div class="container">
+            <div class="row row-cols-2 align-items-center">
+                <div class="col imageHeader">
+                    <img class="logo" src="./images/logo_transparent.png" alt="Main Heading Logo">
+                </div>
+                <div class="col searchInput">
+                    <i class="fas fa-search"></i>
+                    <input class="input-field" type="search" id="searchBar" placeholder="Search">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navbar -->
+        <div class="container navSection">
+            <nav class="navbar navbar-expand-md navbar-light bg-tranparent">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Face Masks</a>
+                        <a class="dropdown-item" href="#">Face Coverings</a>
+                        <a class="dropdown-item" href="#">More Face Masks</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                      <p class="totalPrice">$<span>0.00</span></p>
+                      <p class="numberItems"><span>0</span> items</p>
+                      <i class="fas fa-shopping-basket"></i>
+                  </form>
+                </div>
+              </nav>
+        </div>
+        <div class="container-fluid bottomNavDivider"></div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="productSection">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 my-md-5 product">
+                    <h2 class="productHeading">Life-Barrier Men's Masks</h2>
+                    <p>Men's Life-Barrier Mask give you your freedom back</p>
+                    <p class="priceMen">Price: $<span>10</span></p>
+                    <p>Quantity desired:
+                        <input class="quantity-input" type="number" name="0" id="quantityMen" placeholder="0">
+                    </p>
+                </div>
+                <div class="col-md-6 my-md-5 product">
+                    <h2 class="productHeading">Life-Barrier Women's Mask</h2>
+                    <p>Women's Life-Barrier Mask give you your freedom back</p>
+                    <p class="priceWomen">Price: $<span>8</span></p>
+                    <p>Quantity desired:
+                        <input class="quantity-input" type="number" name="0" id="quantityWomen" placeholder="0">
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="productHeading">Life-Barrier Kid's Mask</h2>
+                    <p>Kid's Life-Barrier Mask give you your freedom back</p>
+                    <p class="priceKids">Price: $<span>6</span></p>
+                    <p>Quantity desired:
+                        <input class="quantity-input" type="number" name="0" id="quantityKid" placeholder="0">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bottomProductDivider"></div>
+    </section>
+
+    <!-- Estimate Order Section -->
+    <section class="estimateSection">
+        <div class="container">
+            <h2 class="estimateHeader my-5">Estimate Order</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 shipping-state">
+                    <label for="state-tax">State (required): </label>
+                    <select name="state-tax" id="state-tax">
+                        <option value="select">- select -</option>
+                        <option value="bexar">Bexar (8.25% tax)</option>
+                        <option value="windcrest">Windcrest (8.25% tax)</option>
+                        <option value="universal-city">Universal City (8.25% tax)</option>
+                        <option value="boerne">Boerne (8.25% tax)</option>
+                    </select>
+                </div>
+                <div class="col-md-4 shipping-handling">
+                    <p class="shipping-option">Shipping and Handling:</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="shipping-radio" id="pickup" value="option1" checked>
+                        <label class="form-check-label" for="pickup">
+                          Pickup (free)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="shipping-radio" id="dropOff" value="option2">
+                        <label class="form-check-label" for="dropOff">
+                          Drop Off ($5.00)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="shipping-radio" id="usMail" value="option3">
+                        <label class="form-check-label" for="usMail">
+                          US Main ($2/Item)
+                        </label>
+                      </div>
+                </div>
+                <div class="col-md-4 shipping-handling">
+                    <p class="shipping-option">Special:</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="special-radio" id="gift" value="option1">
+                        <label class="form-check-label" for="gift">
+                          This is a gift (include a card)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="special-radio" id="mailingList" value="option2">
+                        <label class="form-check-label" for="mailingList">
+                          Sign up for Life-Barrier-Mask mailing list
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="special-radio" id="default" value="option3" checked>
+                        <label class="form-check-label" for="default">
+                          None
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-5">
+                <div class="col-md-6 textArea">
+                    <label for="notes">Other notes:</label>
+
+                    <textarea class="d-block" id="notes" rows="4" cols="40" placeholder="Any other comments"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <p>Click for estimate:</p>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Estimate Total:</span>
+                        </div>
+                        <input type="text" class="form-control estimate-total" value="$0.00">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row mt-3 bg-light">
+                <div class="col-md-12 d-md-flex justify-content-center footer-section">
+                    <p>Created by: Ron Vargas</p>
+                    <p>Contact information: <a href="mailto:ronneyvargas@gmail.com">ronneyvargas@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+     <!-- Bootstrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

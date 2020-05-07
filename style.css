@@ -1,0 +1,102 @@
+/* Main Section */
+
+.logo {
+    width: 200px;
+}
+
+.searchInput i {
+    position: absolute;
+    padding: 15px 10px 10px 10px; 
+    color:gray; 
+    min-width: 50px; 
+    text-align: center;
+}
+
+.input-field { 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center;
+    background-color: lightgray; 
+}
+
+@media only screen and (max-width: 500px) {
+    .searchInput i {
+        padding-left: 0;
+    }
+
+    .input-field {
+        padding-left: 30px;
+        font-size: small;
+    }
+}
+
+.bottomNavDivider,
+.bottomProductDivider {
+    border-bottom: 1px solid lightgray;
+}
+
+p {
+    margin: 16px 10px !important;
+}
+
+.form-inline i {
+    margin-left: 100px;
+}
+
+/* Product Section */
+
+.productHeading {
+    color: blue;
+}
+
+div > p {
+    margin-left: 0 !important;
+}
+
+.quantity-input {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .product {
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .footer-section {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+/* Estimate Order Section */
+
+.estimateHeader {
+    color: blue;
+}
+
+.shipping-option {
+    margin-bottom: 0 !important;
+}
+
+.input-group-text {
+    height: fit-content;
+}
+
+@media only screen and (max-width: 500px) {
+    textarea,
+    input,
+    #state-tax {
+        border: 1px solid lightgray;
+    }
+
+    .estimate-total {
+        width: 126px;
+    }
+  
+    .footer-section {
+       display: block;
+       text-align: center;
+   }
+      
+}
